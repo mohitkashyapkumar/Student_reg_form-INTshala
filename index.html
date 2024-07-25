@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Form with Local Storage</title>
+
+    <link rel="stylesheet" href="style.css"> 
+    
+    <!-- // Linking the stylesheet -->
+</head>
+<body>
+<section class="main-content">
+    <header class="head">
+        <div><img src="stud.png" alt=""></div>
+        <h1><center>Student Entry Form With Delete Functionality</center></h1>
+    </header>
+    <form id="myForm">         
+
+         <!-- // A form created for the registeration task -->
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <button type="submit">Submit Details</button>
+    </form>
+
+    <div id="form-details" style="display: none;">
+        <h2>Submitted Details</h2>
+        <div id="details-content"></div>
+    </div>
+
+    <!-- // Javascript linked for the functionality -->
+
+<script src="script.js"></script>   
+</section>
+    
+</body>
+</html>
